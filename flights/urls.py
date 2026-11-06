@@ -6,6 +6,7 @@ urlpatterns = [
 
     path(
         'flights/', views.FlightViewSets.as_view({
-            'get': 'list'}), name="flights"
+            'get': 'list',
+            'post': 'create',}), name="flights"
     )
 ]
