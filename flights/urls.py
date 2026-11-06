@@ -5,6 +5,12 @@ from .import views
 
 router = DefaultRouter()
 
+router.register(
+    'flights',
+    views.FlightViewSets,
+    basename='flight'
+)
+
 urlpatterns = [
 
     path(
